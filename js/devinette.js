@@ -2,7 +2,7 @@
 Activité : jeu de devinette
 */
 
-console.log("Bienvenue dans ce jeu de devinette !");
+console.log("Bienvenue dans ce super jeu de devinette !");
 
 // Cette ligne génère aléatoirement un nombre entre 1 et 100
 var solution = Math.floor(Math.random() * 100) + 1;
@@ -10,9 +10,8 @@ var solution = Math.floor(Math.random() * 100) + 1;
 // Décommentez temporairement cette ligne pour mieux vérifier le programme
 //console.log("(La solution est " + solution + ")");
 
-// TODO : complétez le programme
 var essai = 1;
-var nombre = Number(prompt("Devinez un nombre entre 1 et 100 (" + (7- essai) + " essais restants) :"));
+var nombre = Number(prompt("Devinez un nombre entre 1 et 100 (" + (7 - essai) + " essais restants) :"));
 while (nombre !== solution && essai < 6){
     if (nombre > solution) {
         console.log(nombre + " est trop grand");
@@ -20,7 +19,7 @@ while (nombre !== solution && essai < 6){
         console.log(nombre + " est trop petit");
     }
     essai++;
-    nombre = nombre = Number(prompt("Devinez un nombre entre 1 et 100 (" + (7- essai) + " essais restants) :"));
+    nombre = nombre = Number(prompt("Devinez un nombre entre 1 et 100 (" + (7 - essai) + " essais restants) :"));
 }
 
 if (nombre !== solution && essai === 6) {
